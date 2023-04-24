@@ -1,0 +1,1004 @@
+@font-face {
+    font-family: LabradorA;
+    font-weight: bold;
+    src: url("../../../fonts/LabradorA-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Galano;
+    font-weight: bold;
+    src: url("../../../fonts/Galano_Grotesque_Medium.otf") format("opentype");
+}
+
+#holap {
+    font-family: LabradorA;
+}
+
+.shadow-box {
+    background-color: #ffffff;
+}
+
+.download-table-xls-button{
+    color: #ffffff;
+    background-color: #00c851;
+    border: none;
+    font-family: 'Roboto';
+    padding: .84rem 2.14rem;
+    font-size: .81rem;
+    border: 0;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.loader{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display:block;
+    margin: 0 auto;
+}
+
+.chatbotBtn {
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    bottom: 32px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 12px 24px 0px;
+    display: flex;
+    fill: rgb(255, 255, 255);
+    height: 56px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: fixed;
+    right: 32px;
+    transform: scale(1);
+    width: 56px;
+    z-index: 999;
+    background: #57E3E3;
+    border-radius: 100%;
+    transition: transform 0.3s ease 0s;
+    color: white;
+}
+
+.nav-link.custom{
+    padding: 0rem 1rem;
+}
+
+#pageDropDown{
+    background-color: #2bbbad !important;
+    
+}
+
+#button{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0.84rem 2.14rem;
+    font-size: 0.81rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 0;
+    border-radius: 0.125rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: inherit;
+}
+
+#buttonSelected{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 0.84rem 2.14rem;
+    font-size: 0.81rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: 0;
+    border-radius: 0.125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+    color: inherit;
+}
+
+
+/*.pvtAxisContainer, .pvtVals{
+    background-color: white;
+}
+table.pvtUi{
+    font-family: 'Roboto';
+    border: 0;
+    border-radius: 2;
+    color: black;
+}
+
+td.pvtOutput{
+    background-color: #113D69;
+    font-size: 20pt;
+    color: white;
+    
+}
+th.pvtRowLabel{
+    background-color: #113D69;
+    font-size: 20pt;
+    color: white;
+}
+
+span.pvtAttr{
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+}*/
+th.pvtRowLabel, th.pvtColLabel{
+    background-color: #7C8B9E !important;
+    font-size: 20pt;
+    color: white;
+}
+.pvtUi {
+    color: black;
+    font-family: 'Roboto';
+    border-collapse: collapse;
+    border: 3px solid black;
+    border-radius: 3px;
+    font-family: Galano !important;
+}
+.pvtUi select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtUi td.pvtOutput {
+    vertical-align: top;
+    background-color: #FFFFFF;
+    font-size: 20pt;
+    color: white;
+}
+
+table.pvtTable {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Roboto';
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+table.pvtTable thead tr th,
+table.pvtTable tbody tr th {
+    background-color: #152F4A;
+    border: 1px solid black;
+    font-family: Arial;
+    font-size: 12pt;
+    padding: 5px;
+    color: white;
+}
+
+table.pvtTable .pvtColLabel {
+    text-align: center;
+}
+table.pvtTable .pvtTotalLabel {
+    text-align: right;
+}
+
+table.pvtTable tbody tr td {
+    color: black;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: right;
+}
+
+.pvtTotal {
+    font-weight: bold;
+    background-color: #E9CFB8 !important;
+    
+}
+.pvtGrandTotal {
+    font-weight: bold;
+    background-color: #C09F77 !important;
+    
+}
+
+.pvtRowOrder,
+.pvtColOrder {
+    cursor: pointer;
+    width: 15px;
+    margin-left: 5px;
+    display: inline-block;
+    user-select: none;
+    text-decoration: none !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtAxisContainer,
+.pvtVals {
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.pvtRenderers {
+    padding-left: 5px;
+    user-select: none;
+}
+
+.pvtDropdown {
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    margin: 3px;
+}
+
+.pvtDropdownIcon {
+    float: right;
+    color: black;
+}
+.pvtDropdownCurrent {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    width: 230px;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+    font-weight: bold;
+    height: 30px;
+}
+
+.pvtDropdownCurrentOpen {
+    border-radius: 4px 4px 0 0;
+}
+
+.pvtDropdownMenu {
+    background: white;
+    position: absolute;
+    width: 100%;
+    margin-top: -1px;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid black;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+}
+
+.pvtDropdownValue {
+    padding: 2px 5px;
+    font-size: 12px;
+    text-align: left;
+
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.pvtDropdownActiveValue {
+    background: #7C8B9E;
+    color: white;
+}
+
+.pvtVals {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    padding-bottom: 12px;
+}
+
+.pvtRows {
+    height: 35px;
+}
+
+.pvtAxisContainer li {
+    padding: 8px 6px;
+    list-style-type: none;
+    cursor: grab;
+}
+.pvtAxisContainer li.pvtPlaceholder {
+    -webkit-border-radius: 5px;
+    padding: 3px 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed black;
+}
+.pvtAxisContainer li.pvtPlaceholder {
+    display: none;
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+}
+span.pvtAttr{
+    font-weight: bold;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.pvtAxisContainer li span.pvtAttr {
+    -webkit-text-size-adjust: 100%;
+    background: white;
+    border: 1px solid #E5E5E5;
+    padding: 2px 5px;
+    white-space: nowrap;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 3px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+.pvtTriangle {
+    cursor: pointer;
+    color: black;
+}
+
+.pvtHorizList li {
+    display: inline-block;
+}
+
+.pvtVertList {
+    vertical-align: top;
+}
+
+.pvtAxisContainer li span.pvtAttr.pvtFilteredAttribute {
+    font-style: italic;
+    background-color: #7C8B9E;
+    color: white;
+    border: 1px solid #7C8B9E;
+}
+
+.pvtAttr:hover {
+    background-color: #E5E5E5 !important;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.sortable-chosen .pvtFilterBox {
+    display: none !important;
+}
+
+.pvtCloseX {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.pvtDragHandle {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 18px;
+    cursor: grab;
+    color: black;
+}
+
+.pvtButton {
+    border-radius: 5px;
+    padding: 3px 6px;
+    border: 1px solid;
+    border-color: black;
+    font-size: 14px;
+    margin: 3px;
+    transition: 0.34s all cubic-bezier(0.19, 1, 0.22, 1);
+    text-decoration: none !important;
+}
+
+.pvtButton:active {
+    background: white;
+}
+
+.pvtFilterBox input {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 0 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pvtFilterBox input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.pvtFilterBox {
+    z-index: 1000;
+    width: 300px;
+    background-color: #fff;
+    position: fixed;
+    text-align: center;
+    user-select: none;
+    min-height: 100px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.9;
+}
+
+.pvtSearch {
+    border-color: #E5E5E5 !important;
+    width: 96% !important;
+    border-radius: 1px !important;
+    margin: 2% !important;
+    height: 30px !important;
+}
+
+.pvtButton {
+    border-color: #E5E5E5 !important;
+    border-radius: 1px !important;
+    font-size: 10pt !important;
+}
+
+.pvtButton:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.pvtFilterBox h4 {
+    margin: 15px;
+}
+.pvtFilterBox p {
+    margin: 10px auto;
+}
+.pvtFilterBox button {
+    color: black;
+}
+.pvtFilterBox input[type='text'] {
+    width: 230px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.pvtCheckContainer {
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 30vh;
+    border-top: 1px solid #dfe8f3;
+}
+
+.pvtCheckContainer p {
+    margin: 0;
+    margin-bottom: 1px;
+    padding: 3px;
+    cursor: default;
+}
+
+.pvtCheckContainer p.selected {
+    background: #7C8B9E;
+    color: white;
+    cursor: pointer;
+}
+
+.pvtOnly {
+    display: none;
+    width: 35px;
+    float: left;
+    font-size: 12px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.pvtOnlySpacer {
+    display: block;
+    width: 35px;
+    float: left;
+}
+
+.pvtCheckContainer p:hover .pvtOnly {
+    display: block;
+}
+.pvtCheckContainer p:hover .pvtOnlySpacer {
+    display: none;
+}
+
+.pvtRendererArea {
+    padding: 5px;
+}
+
+#selectAll{
+    background: #152F4A;
+    color: white;
+    float: left !important;
+    margin-left: 2% !important;
+    width: 47% !important;
+    height: 30px !important;
+}
+#deselectAll{
+    background: #F1F1F1;
+    color: black;
+    float: right !important;
+    margin-right: 2% !important;
+    width: 47% !important;
+    height: 30px !important;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    #queryStart{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+    }
+    #queryLoaded, #queryShow{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        margin-bottom: 15px;
+        visibility: visible;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+    .queryLabel{
+        font-family: Galano;
+        text-align: left;
+        margin-left: 4%;
+        color: #000000;
+    }
+    .queryDiv{
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .queryAlert{
+        color: red;
+        font-size: 14px;
+    }
+    #queryStart{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        margin-bottom: 15px;
+    }
+    #queryLoaded{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    #queryStart{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+    }
+    #queryLoaded, #queryShow{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        margin-bottom: 15px;
+        visibility: visible;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+    .queryLabel{
+        font-family: Galano;
+        text-align: left;
+        margin-left: 4%;
+        color: #000000;
+    }
+    .queryDiv{
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .queryAlert{
+        color: red;
+        font-size: 14px;
+    }
+    #queryStart{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        margin-bottom: 15px;
+    }
+    #queryLoaded{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+    .resultBox{
+        width:78%; 
+        height:100%;
+        float: right;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    .resultArea{
+        width:94%;
+        height:100%;
+        float: left;
+        margin-left: 3%;
+        margin-top: 10px;
+    }
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #queryStart{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+    }
+    #queryLoaded, #queryShow{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        margin-bottom: 15px;
+        visibility: visible;
+        display: block;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+    .queryLabel{
+        font-family: Galano;
+        text-align: left;
+        margin-left: 4%;
+        color: #000000;
+    }
+    .queryDiv{
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .queryAlert{
+        color: red;
+        font-size: 14px;
+    }
+    #buttonQueryStart, #buttonQueryLoaded{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    .resultBox{
+        width:78%; 
+        height:100%;
+        float: right;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    .resultArea{
+        width:94%;
+        height:100%;
+        float: left;
+        margin-left: 3%;
+        margin-top: 10px;
+    }
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #queryStart{
+        margin-left: 31%; 
+        width: 40%; 
+        height: 100%; 
+        float: left;
+    }
+    #queryLoaded, #queryShow{
+        margin-left: 0%; 
+        width: 18%; 
+        height: 80%; 
+        float: left;
+        text-align: left;
+        visibility: visible;
+        display: block;
+        position: fixed;
+        height: auto;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+    .queryLabel{
+        font-family: Galano;
+        text-align: left;
+        margin-left: 4%;
+        color: #000000;
+    }
+    .queryDiv{
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .queryAlert{
+        color: red;
+        font-size: 14px;
+    }
+    #buttonQueryStart, #buttonQueryLoaded{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    .resultBox{
+        width:78%; 
+        height:100%;
+        float: right;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    .resultArea{
+        width:94%;
+        height:100%;
+        float: left;
+        margin-left: 3%;
+        margin-top: 10px;
+    }
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+        width: 33%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #queryStart{
+        margin-left: 31%; 
+        width: 40%; 
+        height: 100%; 
+        float: left;
+    }
+    #queryLoaded, #queryShow{
+        margin-left: 0%; 
+        width: 18%; 
+        height: 80%; 
+        float: left;
+        text-align: left;
+        visibility: visible;
+        display: block;
+        position: fixed;
+        height: auto;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+    .attachedShowQueryBtn{
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        padding: 0.84rem 2.14rem;
+        font-size: 0.81rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        border: 0;
+        border-radius: 0.125rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        white-space: normal;
+        word-wrap: break-word;
+        color: white;
+        background-color: #2bbbad;
+        z-index: 100;
+    }
+    .attachedShowQueryBtn:hover{
+        background-color: #7C8B9E !important;
+        box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+    .queryLabel{
+        font-family: Galano;
+        text-align: left;
+        margin-left: 4%;
+        color: #000000;
+    }
+    .queryDiv{
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .queryAlert{
+        color: red;
+        font-size: 14px;
+    }
+    #buttonQueryStart, #buttonQueryLoaded{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    .resultBox{
+        width:78%; 
+        height:100%;
+        float: right;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    .resultArea{
+        width:94%;
+        height:100%;
+        float: left;
+        margin-left: 3%;
+        margin-top: 10px;
+    }
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .navbar {
+        font-size: 10pt;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        display: inline-block;
+    }
+    #queryStart{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        margin-bottom: 15px;
+    }
+    #queryLoaded{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    
+    #queryShow{
+        visibility: visible;
+    }
+    #queryLoaded div h1{
+        width: 55% !important;
+    }
+
+    .queryLabel{
+        font-family: Galano;
+        text-align: left;
+        margin-left: 4%;
+        color: #000000;
+    }
+    .queryDiv{
+        width: 90%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .queryAlert{
+        color: red;
+        font-size: 14px;
+    }
+
+    #buttonQueryStart{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    #buttonQueryLoaded{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        visibility: visible;
+    }
+    .resultBox{
+        margin-left: 5%; 
+        width: 90%;
+        float: left;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    .resultArea{
+        width:94%;
+        height:100%;
+        float: left;
+        margin-left: 3%;
+        margin-top: 10px;
+    }
+
+    .showTableBtn{
+        width: 70px;
+        height: 50px;
+    }
+    .download-table-xls-button{
+        font-weight: 2pt;
+        height: 50px;
+        width: 100px;
+    }
+    .downloadPDFBtn{
+        font-weight: 2pt;
+        height: 50px;
+        width: 100px;
+    }
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupShowTable{
+        width: 70px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+    .downloadExcelTextBtn,.downloadPDFTextBtn{
+        visibility: hidden;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        width: 0px;
+    }
+}

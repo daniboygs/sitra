@@ -1,0 +1,70 @@
+/*div.loading {
+    position: fixed;
+    top: 55px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2000;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+    box-sizing: border-box;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.3s, 0.3s;
+    transition-property: opacity, visibility;
+    transition-timing-function: ease-out, ease-out;
+    margin-top: 150px;
+}*/
+/*
+div.loading {
+    position: fixed;
+    top: 55px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2000;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+    background-color: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.3s, 0.3s;
+    transition-property: opacity, visibility;
+    transition-timing-function: ease-out, ease-out;
+}
+*/
+
+div.loading {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+    background-color: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.3s, 0.3s;
+    transition-property: opacity, visibility;
+    transition-timing-function: ease-out, ease-out;
+    align-items: center;
+    display: flex;
+}
+
+div.css-tbmi8c {
+    margin-top: 200px;
+    display: inline-block;
+}

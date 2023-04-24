@@ -1,0 +1,97 @@
+/*@font-face {
+    font-family: LabradorA;
+    font-weight: bold;
+    src: url("../../../fonts/LabradorA-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Galano;
+    font-weight: bold;
+    src: url("../../../fonts/Galano_Grotesque_Medium.otf") format("opentype");
+}
++/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+        /*width: 33%;*/
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .showTableBtn{
+        width: 70px;
+        height: 50px;
+    }
+    .buttonGroupTable{
+        width: 100%; 
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+    .buttonGroupShowTable{
+        width: 70px;
+    }
+    .buttonGroupDownload{
+        float: right;
+    }
+}
+
+.tableButtonGroup{
+    display: inline-flex;
+    width: 100%;
+}
