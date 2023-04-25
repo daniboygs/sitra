@@ -11,18 +11,22 @@
     "evaluate-nlp": "^1.0.4",
     "file-saver": "^2.0.2",
     "html2canvas": "^1.0.0-rc.5",
+    "immutability-helper": "^3.1.1",
     "jspdf-autotable": "^3.5.3",
     "mdbootstrap": "^4.18.0",
     "mdbreact": "^4.26.1",
     "natural": "^0.6.3",
     "node-nlp": "3.4.0",
+    "pivottable": "^2.23.0",
     "plotly.js": "^1.54.1",
     "react": "^16.13.1",
+    "react-auth-kit": "^2.12.2",
     "react-bootstrap": "^1.0.1",
     "react-bootstrap-table": "^4.3.1",
     "react-csv": "^1.1.2",
     "react-date-picker": "^7.10.0",
     "react-dom": "^16.13.1",
+    "react-draggable": "^4.4.5",
     "react-google-charts": "^3.0.15",
     "react-html-table-to-excel": "^2.0.0",
     "react-loader-spinner": "^3.1.14",
@@ -35,6 +39,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.0.1",
     "react-simple-chatbot": "^0.6.1",
+    "react-sortablejs": "^6.1.4",
     "recharts": "^1.8.5",
     "redux": "^4.0.5",
     "styled-components": "^4.4.1"
@@ -59,5 +64,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6"
   }
 }
