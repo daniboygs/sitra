@@ -19,7 +19,7 @@ export const Main = () => (
         </Switch>
     </div>
 );
-
+/*
 
 const LoginRoute = ({ component: Component, ...rest }) => {
     const authenticated = useSelector((state) => state.authState.authenticated);
@@ -60,5 +60,5 @@ const Router = () => {
         </div>
     );
 };
-
-export default Router;
+*/
+export default Main;

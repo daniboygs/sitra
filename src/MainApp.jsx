@@ -7,7 +7,7 @@ import './App.css';
 import { RequireAuth } from "react-auth-kit";
 import { HomeMain } from "./Home";
 
-function App() {
+function MainApp() {
   return (
     <Router>
       <Header></Header>
@@ -35,4 +35,4 @@ function App() {
   );
 }*/
 
-export default App;
+export default MainApp;

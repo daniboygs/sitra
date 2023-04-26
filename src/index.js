@@ -15,8 +15,41 @@ import 'mdbreact/dist/css/mdb.css';
 import 'react-bootstrap-table/dist/react-bootstrap-table.min.js';
 import 'react-bootstrap-table/dist/react-bootstrap-table.min.css';
 
+import { AuthProvider } from "react-auth-kit";
+import { BrowserRouter } from "react-router-dom";
+
+import {
+    LightTheme,
+    BaseProvider,
+    styled,
+    DarkTheme,
+    createDarkTheme,
+  } from "baseui";
+
+  const Centered = styled("div", {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100%",
+    width: "100%",
+  });
+  
 //ReactDOM.render(<App/>, document.getElementById('root'));
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+
+    <AuthProvider
+          authType={"cookie"}
+          authName={"_auth"}
+          cookieDomain={window.location.hostname}
+          cookieSecure={false}
+        >
+          <Centered>
+            <BrowserRouter>
+              <App />
+            </BrowserRouter>
+          </Centered>
+        </AuthProvider>
+    , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
