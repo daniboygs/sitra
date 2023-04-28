@@ -19,6 +19,10 @@ export function getImputeds(request){
     return axios.post(base_api_url + 'imputado.php', request);
 }
 
+export function getAuth(request){
+    return axios.post(base_api_url + 'auth.php', request);
+}
+
 /*________________________Catalogs________________________*/
 
 export function getFiscalias(){

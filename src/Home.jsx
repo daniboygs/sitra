@@ -6,6 +6,7 @@ import Carpets from './components/carpets/carpets';
 import Victims from './components/victims/victims';
 import Imputeds from './components/imputeds/imputeds';
 import Binnacle from './components/binnacle/binnacle';
+import './loged.css';
 
 export const HomeMain = () => (
     <div style={{marginTop: '200px', width: '95%', marginLeft: '2%', marginRight: '2%', float: 'left'}}>
@@ -14,7 +15,7 @@ export const HomeMain = () => (
             <Route exact path="/denuncias" component={Carpets} />      
             <Route exact path="/victimas" component={Victims} /> 
             <Route exact path="/imputados" component={Imputeds} /> 
-            {/*<Route exact path="/binnacle" component={Binnacle} />*/}
+            {/*<Route exact path="/binnacle" component={Binnacle} />*/} 
             <Route exact path="/carpets:request" component={Carpets} />
             <Route path="/" element={<Login />}></Route>
         </Switch>

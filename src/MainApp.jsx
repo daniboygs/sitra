@@ -7,16 +7,14 @@ import './App.css';
 import { RequireAuth } from "react-auth-kit";
 import { HomeMain } from "./Home";
 
-function MainApp() {
-  return (
-    <Router>
-      <Header></Header>
-      <Main></Main>
-      {/*<Chatbot></Chatbot>*/}
-    </Router>
-  );
-}
-
+//function MainApp() {
+export const MainApp = () => (
+  <Router>
+    <Header></Header>
+    <Main></Main>
+    {/*<Chatbot></Chatbot>*/}
+  </Router>
+);
 /*
 function App() {
   return (
@@ -35,4 +33,4 @@ function App() {
   );
 }*/
 
-export default MainApp;
+//export default MainApp;
