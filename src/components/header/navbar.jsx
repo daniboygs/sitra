@@ -82,12 +82,12 @@ class NavbarComponent extends React.Component{
         return (
             <Navbar className="navbar" collapseOnSelect style={{backgroundColor: '#152F4A'}}>
                 <ul className="navbar-nav mr-auto">
-                    <li><Link to='/' className="nav-link custom">{this.state.pathname=='/'?<img src={hs} width='140px' height='60px'/>:<img src={hns} onClick={() => this.onClick('/')} width='140px' height='60px'/>}</Link></li>
+                    {/*<li><Link to='/' className="nav-link custom">{this.state.pathname=='/'?<img src={hs} width='140px' height='60px'/>:<img src={hns} onClick={() => this.onClick('/')} width='140px' height='60px'/>}</Link></li>*/}
                     <li><Link to='/inicio' className="nav-link custom">{this.state.pathname=='inicio'?<img src={hs} width='140px' height='60px'/>:<img src={hns} onClick={() => this.onClick('inicio')} width='140px' height='60px'/>}</Link></li>
                     <li><Link to='/denuncias' className="nav-link custom">{this.state.pathname=='denuncias'?<img src={fs} width='140px' height='60px'/>:<img src={fns} onClick={() => this.onClick('denuncias')} width='140px' height='60px'/>}</Link></li>
                     <li><Link to='/victimas' className="nav-link custom">{this.state.pathname=='victimas'?<img src={vs} width='140px' height='60px'/>:<img src={vns} onClick={() => this.onClick('victimas')} width='140px' height='60px'/>}</Link></li>
                     <li><Link to='/imputadis' className="nav-link custom">{this.state.pathname=='imputados'?<img src={is} width='140px' height='60px'/>:<img src={ins} onClick={() => this.onClick('imputados')} width='140px' height='60px'/>}</Link></li>
-                    <li><Link to='/binnacle' className="nav-link custom">Bitacora</Link></li>
+                    {/*<li><Link to='/binnacle' className="nav-link custom">Bitacora</Link></li>*/}
                 </ul>
             </Navbar>
         );
